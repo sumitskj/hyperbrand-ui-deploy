@@ -259,7 +259,7 @@ const Manual = () => {
             sx={{ mt: "1rem" }}
             color="grey"
             fullWidth={false}
-            label="Enter business email"
+            label="Enter business website"
             value={businessWebsite}
             onChange={(event) => setBusinessWebsite(event.target.value)}
           />
