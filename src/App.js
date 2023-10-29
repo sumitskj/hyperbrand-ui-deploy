@@ -9,11 +9,16 @@ import SideBar from "./components/sideBar/SideBar";
 import BlogTitles from "./components/blogTitles/BlogTitles";
 import WriteBlog from "./components/writeBlog/WriteBlog";
 import MyBlogs from "./components/myBlogs/MyBlogs";
+import Manual from "./components/Manual/Manual";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
+      element: <Manual />,
+    },
+    {
+      path: "/onboard",
       element: <CompanyOnboardForm />,
     },
     {
