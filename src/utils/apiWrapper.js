@@ -45,7 +45,7 @@ export const fetchBackendApiWrapper = async (path, options, token = "") => {
   );
 };
 
-const fetchRetry = async (url, options, retries = 3) => {
+const fetchRetry = async (url, options, retries = 1) => {
   const retryCodes = [408, 500, 502, 503, 504, 522, 524];
   return await fetch(url, options)
     .then((res) => {
